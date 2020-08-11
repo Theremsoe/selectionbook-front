@@ -1,0 +1,93 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:security/recommended",
+        "eslint:recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "import",
+        "security",
+        "xss"
+    ],
+    "rules": {
+        "semi": "off",
+        "indent": "off",
+        "max-len": [
+            "error",
+            120
+        ],
+        "no-unused-vars": "off",
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "max-lines": [
+            "error",
+            {
+                "max": 250,
+                "skipComments": true
+            }
+        ],
+        "import/no-unresolved": "error",
+        "jsx-a11y/label-has-for": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "react/sort-comp": "off",
+        "react/jsx-indent": "off",
+        "react/no-unused-state": "off",
+        "react/jsx-indent-props": "off",
+        "react/state-in-constructor": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/indent": [
+            "error",
+            4
+        ],
+        "@typescript-eslint/explicit-member-accessibility": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/prefer-readonly": "error",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/ban-types": "error",
+        "@typescript-eslint/semi": "error"
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}

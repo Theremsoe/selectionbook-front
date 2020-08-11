@@ -1,0 +1,8 @@
+.vs_code
+node_modules
+public
+resources
+jest.config.js
+webpack.mix.js
+tsconfig.json
+package.json

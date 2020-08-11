@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "module": "esNext",
+        "target": "es2019",
+        "moduleResolution": "node",
+        "strict": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "baseUrl": ".",
+    },
+    "exclude": [
+        "/node_modules/",
+    ]
+}
